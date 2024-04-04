@@ -6,29 +6,49 @@
   <meta name="author" content="Brayan Roberto">
   <meta name="description" content="Exemplo de uma página na Web">
   <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <link rel="stylesheet" href="Home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>Aprendendo HTML5</title>
 </head>
 <body>
-  <header>
+  <header class="cabecalho">
     <nav>
+      <h1>Logo</h1>
       <ul>
-        <li>Blog</li>
         <li>Home</li>
         <li>Meu Perfil</li>
+        <li><img class="fotoPerfilNav" src="src/do-utilizador.png" alt="Foto de Perfil">
+        </li>
       </ul>
-      <img src="src/do-utilizador.png" style="height: 50px; width: 50px;" alt="Foto de Perfil">
-      <span>Usuario</span>
     </nav>
+  </header>
 
     <main>
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quasi excepturi voluptas consequatur commodi cum laboriosam dolorem expedita. Omnis, unde vero. Doloremque modi placeat iste obcaecati dolore quod ducimus maiores?</h4>    
-      <img src="src/praia.jpg" alt="Post">
-      <div style="height: 30px; width: 30px; display: flex;">
-        <img style="margin-left: 0.5rem;" src="src/gostar.png" alt="Like">
-        <img style="margin-left: 0.5rem;" src="src/bate-papo.png" alt="Comment">
-        <img style="margin-left: 0.5rem;" src="src/compartilhar.png" alt="Share">
+      <div class="container">
+        <div class="container-top">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quasi excepturi voluptas consequatur commodi cum laboriosam dolorem expedita. Omnis, unde vero. Doloremque modi placeat iste obcaecati dolore quod ducimus maiores?</h4>    
+        </div>
+        <img src="src/praia.jpg" alt="Post">
+        <hr>
+        <div class="container-bottom">
+          <div>
+            <img src="src/gostar.png" alt="Like">
+            <span>Curtir</span>
+          </div>
+
+          <div>
+            <img src="src/bate-papo.png" alt="Comment">
+            <span>Comentar</span>
+          </div>
+
+          <div>
+            <img src="src/compartilhar.png" alt="Share">
+            <span>Compartilhar</span>
+          </div>  
+        </div>
       </div>
     </main>
-  </header>
 </body>
 </html>
