@@ -17,10 +17,9 @@
     <nav>
       <h1>Logo</h1>
       <ul>
-        <li>Home</li>
-        <li>Meu Perfil</li>
-        <li><img class="fotoPerfilNav" src="src/do-utilizador.png" alt="Foto de Perfil">
-        </li>
+        <li class="navigation"><a href="Home.html">Home</a></li>
+        <li class="navigation"><a href="Perfil.html">Perfil</a></li>
+        <li><img class="fotoPerfilNav" src="src/do-utilizador.png" alt="Foto de Perfil"></li>
       </ul>
     </nav>
   </header>
@@ -30,25 +29,37 @@
         <div class="container-top">
           <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quasi excepturi voluptas consequatur commodi cum laboriosam dolorem expedita. Omnis, unde vero. Doloremque modi placeat iste obcaecati dolore quod ducimus maiores?</h4>    
         </div>
-        <img src="src/praia.jpg" alt="Post">
+        <div class="container-mid">
+        </div>
+        <div class="container-comment">
+          <img class="fotoPerfilComment" src="src/do-utilizador.png" alt="Foto de Perfil">
+          <form action="">
+            <input id="inputComment" type="text" placeholder="Deixe seu comentário" onkeyup='inputTest()'>
+            <button class="buttonComment" onclick='sendComment()'> 
+                <img class="fotoButtonComment" src="src/mandar.png" alt="">
+            </button>
+          </form>
+        </div>
         <hr>
         <div class="container-bottom">
-          <div>
-            <img src="src/gostar.png" alt="Like">
-            <span>Curtir</span>
-          </div>
+          <button class="buttonLike" onclick='sendLike()'>
+            <img id="imageLike" src="src/gostar.png" alt="Like">
+            <span id="like">Curtir</span>
+          </button>
 
-          <div>
+          <button>
             <img src="src/bate-papo.png" alt="Comment">
-            <span>Comentar</span>
-          </div>
+            <span>Comentários</span>
+          </button>
 
-          <div>
+          <button>
             <img src="src/compartilhar.png" alt="Share">
             <span>Compartilhar</span>
-          </div>  
+          </button>  
         </div>
       </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
